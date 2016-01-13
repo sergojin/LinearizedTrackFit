@@ -259,7 +259,8 @@ class EstimatorSimple
     inputFile.open(inputFileName);
     if (!inputFile) {
       std::cout << "EstimatorSimple: Error opening " + inputFileName << std::endl;
-      throw;
+      return;
+      // throw;
     }
 
     // Read number of variables and number of track parameters
